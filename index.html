@@ -82,12 +82,53 @@
     form-label: for label 
     form-select: for dropdown 
     form-checkbox: for checkbox -->
-    <div class="container">
+    <!-- <div class="container">
         <form action="">
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control-sm">
             <button class="btn btn-primary">Submit</button>
         </form>
+    </div> -->
+
+    <!-- Floating label  -->
+    <!-- <div class="container"> -->
+      <!-- Form validatation -->
+      <!-- <form>
+        <div class="form-floating">
+          <input type="email" class="form-control" placeholder="Enter email" required style="width: 50%;">
+          <label for="email">Email</label>
+          <div class="invalid-feedback">Invalid email</div>
+          <div class="valid-feedback">Correct email</div>
+        </div>
+        <button class="btn btn-primary" style="margin: 10px;">Submit</button>
+      </form> -->
+    <!-- </div> -->
+  
+    <!-- Button component -->
+    <!-- <div class="container">
+      <div class="btn-group-vertical">
+        <a href="/" class="btn btn-primary">Test</a>
+        <a href="/" class="btn btn-primary">Test</a>
+        <a href="/" class="btn btn-primary">Test</a>
+        <a href="/" class="btn btn-primary">Test</a>
+        <a href="/" class="btn btn-primary">Test</a>
+      </div>
+    </div> -->
+
+    <!-- Alerts -->
+    <div class="container">
+      <div class="alert alert-success alert-dismissable" role="alert">
+        Alerts
+        <button class="btn-close" aria-label="close" data-bs-dismiss="alert"></button>
+      </div>
     </div>
+    <script>
+      // Form validation
+      const form = document.querySelector('form');
+
+      form.addEventListener('submit', e => e.preventDefault());
+
+      form.classList.add('was-validated');
+    </script>
   </body>
 </html>
